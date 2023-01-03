@@ -1,0 +1,62 @@
+// DM Environment file for Mapping.dme.
+// All manual changes should be made outside the BEGIN_ and END_ blocks.
+// New source code should be placed in .dm files: choose File/New --> Code File.
+
+// BEGIN_INTERNALS
+// END_INTERNALS
+
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+#define FILE_DIR "Bass"
+#define FILE_DIR "BassIcons"
+#define FILE_DIR "Code"
+#define FILE_DIR "Code/Skills"
+#define FILE_DIR "Icons"
+#define FILE_DIR "Icons/BassIcons"
+#define FILE_DIR "Icons/DHD"
+#define FILE_DIR "Icons/Explode"
+#define FILE_DIR "Icons/firis"
+#define FILE_DIR "Icons/gate 2"
+#define FILE_DIR "Icons/iris"
+#define FILE_DIR "Icons/Mobs"
+#define FILE_DIR "Icons/Mobs/TauriOutfits"
+#define FILE_DIR "Icons/newhair"
+#define FILE_DIR "Icons/Outfits"
+#define FILE_DIR "Icons/Stargate"
+#define FILE_DIR "Icons/Stargate/Backup"
+#define FILE_DIR "Icons/Stargate - Copy"
+#define FILE_DIR "Icons/Stargate - Copy/backup"
+#define FILE_DIR "Icons/Stargate - Copy/gate"
+#define FILE_DIR "Icons/Stargate 111"
+#define FILE_DIR "Icons/Stargate 111/backup"
+#define FILE_DIR "Icons/Stargate 111/gate"
+#define FILE_DIR "Turfs"
+// END_FILE_DIR
+
+// BEGIN_PREFERENCES
+#define DEBUG
+// END_PREFERENCES
+
+// BEGIN_INCLUDE
+#include "Map.dmm"
+#include "Bass\Atlantis Turfs.dm"
+#include "Bass\B4ss.dm"
+#include "Bass\consols.dm"
+#include "Bass\floors.dm"
+#include "Bass\Mobs.dm"
+#include "Bass\Objects.dm"
+#include "Bass\pillarrocksturf.dm"
+#include "Bass\VariousNPC.dm"
+#include "Bass\walls.dm"
+#include "Bass\WraithTurfs.dm"
+#include "Bass\ZPMPlacer.dm"
+#include "Turfs\Atlantis.dm"
+#include "Turfs\Chulak.dm"
+#include "Turfs\Dessert.dm"
+#include "Turfs\Goauld.dm"
+#include "Turfs\Neutral.dm"
+#include "Turfs\Other.dm"
+#include "Turfs\SGC.dm"
+#include "Turfs\Space.dm"
+// END_INCLUDE
+

@@ -1,0 +1,9 @@
+/*
+	HUD Windows Demo: RPG Events Macros
+	By Tyruswoo
+*/
+
+//When the player presses these keys, we make them interact with anything they are facing.
+macro
+	Space		return "Interact"
+	Return		return "Interact"

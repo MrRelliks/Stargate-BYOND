@@ -1,0 +1,1627 @@
+macro "macro"
+	elem 
+		name = "Center+REP"
+		command = ".center"
+	elem 
+		name = "Northeast+REP"
+		command = ".northeast"
+	elem 
+		name = "Southeast+REP"
+		command = ".southeast"
+	elem 
+		name = "Southwest+REP"
+		command = ".southwest"
+	elem 
+		name = "Northwest+REP"
+		command = ".northwest"
+	elem 
+		name = "West+REP"
+		command = ".west"
+	elem 
+		name = "North+REP"
+		command = ".north"
+	elem 
+		name = "East+REP"
+		command = ".east"
+	elem 
+		name = "South+REP"
+		command = ".south"
+
+macro "macro1"
+
+
+menu "Menu"
+	elem 
+		name = "File"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "Options"
+		command = ".options"
+		category = "File"
+		saved-params = "is-checked"
+	elem 
+		name = "Quit"
+		command = ".quit"
+		category = "File"
+		saved-params = "is-checked"
+
+
+window "Announce"
+	elem "Announce"
+		type = MAIN
+		pos = 709,358
+		size = 412x350
+		anchor1 = none
+		anchor2 = none
+		background-color = #292929
+		is-visible = false
+		border = line
+		saved-params = "pos;size;is-minimized;is-maximized"
+		statusbar = false
+		can-minimize = false
+		can-resize = false
+		image = 'Interface\\Announce.png'
+		transparent-color = #ff0000
+	elem "outputannounce"
+		type = OUTPUT
+		pos = 24,88
+		size = 366x195
+		anchor1 = 6,25
+		anchor2 = 95,81
+		text-color = #fffdfd
+		background-color = #4375c8
+		saved-params = "max-lines"
+		link-color = #b94646
+		visited-color = #d72828
+
+window "Browser1"
+	elem "Browser1"
+		type = MAIN
+		pos = 281,0
+		size = 640x480
+		anchor1 = none
+		anchor2 = none
+		background-color = #252525
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		statusbar = false
+		can-minimize = false
+		can-resize = false
+	elem "browser"
+		type = BROWSER
+		pos = 0,0
+		size = 640x480
+		anchor1 = none
+		anchor2 = none
+		background-color = #252525
+		saved-params = ""
+		show-history = true
+
+window "ChooseGender"
+	elem "ChooseGender"
+		type = MAIN
+		pos = 281,0
+		size = 832x858
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Chooserace"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-resize = false
+		is-pane = true
+		image = 'Interface\\Chooseyourgender.png'
+	elem "button17"
+		type = BUTTON
+		pos = 489,288
+		size = 231x244
+		anchor1 = 63,47
+		anchor2 = 90,75
+		background-color = #2c3f5e
+		saved-params = "is-checked"
+		text = ""
+		image = 'Interface\\female.png'
+		command = "ChooseGenderFeMale"
+		is-flat = true
+	elem "button16"
+		type = BUTTON
+		pos = 152,312
+		size = 152x219
+		anchor1 = 11,48
+		anchor2 = 29,74
+		background-color = #2c3f5e
+		saved-params = "is-checked"
+		text = ""
+		image = 'Interface\\male.png'
+		command = "ChooseGenderMale"
+		is-flat = true
+
+window "ChooseHair"
+	elem "ChooseHair"
+		type = MAIN
+		pos = 281,0
+		size = 832x858
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Chooserace"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-resize = false
+		is-pane = true
+		image = 'Interface\\Chooseyourhair.png'
+	elem "button17"
+		type = BUTTON
+		pos = 589,363
+		size = 99x181
+		anchor1 = none
+		anchor2 = none
+		background-color = #2c3f5e
+		saved-params = "is-checked"
+		text = ""
+		image = 'Interface\\Mohwawk.png'
+		command = "ChooseHairMohawk"
+		is-flat = true
+	elem "button16"
+		type = BUTTON
+		pos = 128,375
+		size = 132x177
+		anchor1 = none
+		anchor2 = none
+		background-color = #2c3f5e
+		is-transparent = true
+		saved-params = "is-checked"
+		text = ""
+		image = 'Interface\\Scruffy.png'
+		command = "ChooseHairScruffy"
+		is-flat = true
+
+window "ChooseHairFemale"
+	elem "ChooseHairFemale"
+		type = MAIN
+		pos = 281,0
+		size = 832x858
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Chooserace"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-resize = false
+		is-pane = true
+		image = 'Interface\\Chooseyourhair.png'
+	elem "button19"
+		type = BUTTON
+		pos = 536,328
+		size = 100x169
+		anchor1 = 64,38
+		anchor2 = 76,58
+		background-color = #2c3f5e
+		saved-params = "is-checked"
+		text = ""
+		image = 'Interface\\Ponytail.png'
+		command = "ChooseHairPonyTail"
+		is-flat = true
+	elem "button18"
+		type = BUTTON
+		pos = 184,345
+		size = 112x167
+		anchor1 = none
+		anchor2 = none
+		background-color = #2c3f5e
+		saved-params = "is-checked"
+		text = ""
+		image = 'Interface\\Long.png'
+		command = "ChooseHairLong"
+		is-flat = true
+
+window "Login"
+	elem "Login"
+		type = MAIN
+		pos = 0,0
+		size = 776x792
+		anchor1 = none
+		anchor2 = none
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Login"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-resize = false
+		is-pane = true
+		image = 'Interface\\Login.png'
+	elem "button12"
+		type = BUTTON
+		pos = 321,443
+		size = 140x56
+		anchor1 = 41,56
+		anchor2 = 59,63
+		saved-params = "is-checked"
+		text = ""
+		image = 'Interface\\load.png'
+		command = "LoadCharacter"
+	elem "button11"
+		type = BUTTON
+		pos = 320,385
+		size = 140x56
+		anchor1 = 41,49
+		anchor2 = 59,56
+		saved-params = "is-checked"
+		text = ""
+		image = 'Interface\\new.png'
+		command = "NewLogin"
+
+window "Scores"
+	elem "Scores"
+		type = MAIN
+		pos = 281,0
+		size = 720x380
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		image = 'Interface\\Scores.png'
+		keep-aspect = true
+	elem "button20"
+		type = BUTTON
+		pos = 371,56
+		size = 101x41
+		anchor1 = 39,15
+		anchor2 = 53,26
+		font-size = 15
+		font-style = "bold"
+		text-color = #ffffff
+		saved-params = "is-checked"
+		text = "Smithing"
+		image = 'ScreenShots\\Button.png'
+		command = "smithingscores"
+	elem "label10"
+		type = LABEL
+		pos = 156,16
+		size = 420x32
+		anchor1 = 22,4
+		anchor2 = 80,13
+		font-size = 20
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #8fb9ff
+		saved-params = ""
+		text = "HIGH SCORES"
+	elem "button5"
+		type = BUTTON
+		pos = 576,55
+		size = 101x41
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		saved-params = "is-checked"
+		text = "(X) Close"
+		image = 'ScreenShots\\Button.png'
+		command = "CloseScores"
+	elem "Scoreboard"
+		type = BROWSER
+		pos = 40,128
+		size = 600x232
+		anchor1 = 6,34
+		anchor2 = 94,86
+		background-color = #5e5e5e
+		saved-params = ""
+	elem "button1"
+		type = BUTTON
+		pos = 259,56
+		size = 101x41
+		anchor1 = 24,15
+		anchor2 = 38,26
+		font-size = 15
+		font-style = "bold"
+		text-color = #ffffff
+		saved-params = "is-checked"
+		text = "Mining"
+		image = 'ScreenShots\\Button.png'
+		command = "miningscores"
+
+window "bank"
+	elem "bank"
+		type = MAIN
+		pos = 281,0
+		size = 620x470
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Shop"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		icon = 'Interface\\112565.png'
+		image = 'Interface\\SHOP.png'
+	elem "button10"
+		type = BUTTON
+		pos = 128,33
+		size = 76x32
+		anchor1 = 21,7
+		anchor2 = 33,14
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = "is-checked"
+		text = "Withdraw"
+		command = "WithdrawItem6543875643895743"
+	elem "button9"
+		type = BUTTON
+		pos = 128,76
+		size = 76x32
+		anchor1 = 21,16
+		anchor2 = 33,23
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = "is-checked"
+		text = "Deposit"
+		command = "DepositItem758365437286348"
+	elem "button8"
+		type = BUTTON
+		pos = 24,39
+		size = 82x21
+		anchor1 = 4,8
+		anchor2 = 17,13
+		saved-params = "is-checked"
+		text = ""
+		image = 'Interface\\Close.png'
+		command = "HideBankkkkkk"
+		stretch = true
+	elem "label5"
+		type = LABEL
+		pos = 328,52
+		size = 132x36
+		anchor1 = none
+		anchor2 = none
+		font-size = 24
+		text-color = #f8f8f8
+		background-color = #4375c8
+		saved-params = ""
+		text = "BANK"
+	elem "bangrid"
+		type = GRID
+		pos = 48,152
+		size = 400x272
+		anchor1 = 8,32
+		anchor2 = 83,90
+		font-size = 10
+		text-color = #ffffff
+		background-color = #4375c8
+		drop-zone = false
+		saved-params = ""
+		cells = 1x1
+		current-cell = 1,1
+		small-icons = true
+		highlight-color = #000000
+
+window "chooserace"
+	elem "chooserace"
+		type = MAIN
+		pos = 281,0
+		size = 776x792
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Chooserace"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-resize = false
+		is-pane = true
+		image = 'Interface\\Chooseyourrace.png'
+	elem "button15"
+		type = BUTTON
+		pos = 496,248
+		size = 184x272
+		anchor1 = 65,48
+		anchor2 = 83,80
+		background-color = #2c3f5e
+		saved-params = "is-checked"
+		text = ""
+		image = 'Interface\\jaffa.png'
+		command = "Choosewraith"
+		is-flat = true
+	elem "button14"
+		type = BUTTON
+		pos = 128,264
+		size = 140x248
+		anchor1 = 16,33
+		anchor2 = 35,65
+		background-color = #2c3f5e
+		is-transparent = true
+		saved-params = "is-checked"
+		text = ""
+		image = 'Interface\\tauri.png'
+		command = "Choosetauri"
+		is-flat = true
+		stretch = true
+
+window "empire"
+	elem "empire"
+		type = MAIN
+		pos = 281,0
+		size = 783x830
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		is-pane = true
+		image = 'Interface\\Empire.png'
+	elem "label24"
+		type = LABEL
+		pos = 40,204
+		size = 456x124
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #5e87ca
+		border = line
+		saved-params = ""
+		text = "This is a very basic concept test of the new empire management feature.\n\nResearch allows you to upgrade your technology levels and the Resources tab allows you to gather resources (duh).\n\nTo Be Added.....\n\nArmies,  Ships, Ship weapons and tech upgrades  , Power levels and a PVP element."
+		text-wrap = true
+	elem "button27"
+		type = BUTTON
+		pos = 128,8
+		size = 104x44
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = "is-checked"
+		text = "Resources"
+		command = "OpenResources"
+	elem "button28"
+		type = BUTTON
+		pos = 608,8
+		size = 104x44
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = "is-checked"
+		text = "Close (X)"
+		command = "CloseEmpire"
+	elem "OpenEmpire"
+		type = BUTTON
+		pos = 8,8
+		size = 104x44
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = "is-checked"
+		text = "Research"
+		command = "OpenEmpire"
+	elem "label15"
+		type = LABEL
+		pos = 352,80
+		size = 104x20
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "Technology Level: "
+		align = left
+	elem "techlvllabel"
+		type = LABEL
+		pos = 464,80
+		size = 40x20
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "0"
+	elem "button22"
+		type = BUTTON
+		pos = 292,160
+		size = 212x32
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #2660c1
+		saved-params = "is-checked"
+		text = "Train Tech"
+		command = "Traintech"
+	elem "tech"
+		type = BAR
+		pos = 288,104
+		size = 216x48
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		saved-params = ""
+		bar-color = #66ffff
+		is-slider = false
+		width = 100
+		dir = east
+	elem "label13"
+		type = LABEL
+		pos = 96,80
+		size = 104x20
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "Research Level: "
+		align = left
+	elem "researchlvllabel"
+		type = LABEL
+		pos = 208,80
+		size = 40x20
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "0"
+	elem "button21"
+		type = BUTTON
+		pos = 36,160
+		size = 212x32
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #2660c1
+		saved-params = "is-checked"
+		text = "Train Research"
+		command = "TrainResearch"
+	elem "research"
+		type = BAR
+		pos = 32,104
+		size = 216x48
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		saved-params = ""
+		bar-color = #66ffff
+		is-slider = false
+		width = 100
+		dir = east
+
+window "mainwindow"
+	elem "mainwindow"
+		type = MAIN
+		pos = 0,0
+		size = 1904x962
+		anchor1 = none
+		anchor2 = none
+		background-color = #4375c8
+		is-default = true
+		border = line
+		saved-params = "pos;size;is-maximized"
+		title = "Stargate : BYOND"
+		icon = 'Interface\\StargateBYOND.png'
+		image-mode = center
+		macro = "macro"
+		menu = "Menu"
+		outer-size = 1920x1040
+		inner-size = 1904x981
+	elem "label2"
+		type = LABEL
+		pos = -32,-8
+		size = 1960x64
+		anchor1 = 0,0
+		anchor2 = 100,6
+		font-size = 15
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #073582
+		border = sunken
+		saved-params = ""
+		text = "Stargate: BYOND"
+	elem "MapOutput"
+		type = CHILD
+		pos = 592,72
+		size = 776x792
+		anchor1 = 31,8
+		anchor2 = 72,90
+		background-color = none
+		saved-params = "splitter"
+		left = "Login"
+		is-vert = false
+	elem "label9"
+		type = LABEL
+		pos = 1560,63
+		size = 336x817
+		anchor1 = 78,1
+		anchor2 = 100,86
+		background-color = #8fb9ff
+		border = sunken
+		saved-params = ""
+		text = ""
+	elem "label7"
+		type = LABEL
+		pos = 12,62
+		size = 364x818
+		anchor1 = 1,1
+		anchor2 = 36,86
+		background-color = #8fb9ff
+		border = sunken
+		saved-params = ""
+		text = ""
+	elem "playersonline"
+		type = OUTPUT
+		pos = 1568,67
+		size = 312x40
+		anchor1 = 78,7
+		anchor2 = 99,11
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = "max-lines"
+	elem "label8"
+		type = LABEL
+		pos = 0,888
+		size = 1904x72
+		anchor1 = 0,92
+		anchor2 = 100,100
+		background-color = #073582
+		border = sunken
+		saved-params = ""
+		text = ""
+	elem "output"
+		type = OUTPUT
+		pos = 24,558
+		size = 344x298
+		anchor1 = 1,53
+		anchor2 = 35,84
+		text-color = #f8f8f8
+		background-color = #4375c8
+		is-default = true
+		border = line
+		saved-params = "max-lines"
+	elem "input"
+		type = INPUT
+		pos = 232,904
+		size = 1627x41
+		anchor1 = 12,90
+		anchor2 = 98,98
+		font-family = "Verdana"
+		font-size = 10
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		is-default = true
+		border = line
+		saved-params = ""
+		command = "!Universe \""
+	elem "label12"
+		type = LABEL
+		pos = 24,528
+		size = 344x24
+		anchor1 = 1,55
+		anchor2 = 35,57
+		font-size = 10
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #073582
+		border = line
+		saved-params = ""
+		text = "Local Chat"
+	elem "btnsay"
+		type = BUTTON
+		pos = 35,904
+		size = 61x36
+		anchor1 = 2,89
+		anchor2 = 5,93
+		font-family = "Verdana,Arial"
+		font-size = 10
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		border = line
+		saved-params = "is-checked"
+		text = "Say"
+		command = ".winset \"input.command=\"!Say \\\"\""
+		is-flat = true
+	elem "Server"
+		type = OUTPUT
+		pos = 1568,112
+		size = 312x72
+		anchor1 = 78,7
+		anchor2 = 99,19
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = "max-lines"
+	elem "announce"
+		type = OUTPUT
+		pos = 24,88
+		size = 344x424
+		anchor1 = 1,2
+		anchor2 = 35,52
+		font-family = "Arial,Verdana"
+		font-size = 8
+		background-color = #4375c8
+		border = line
+		saved-params = "max-lines"
+		visited-color = #ff0000
+		enable-http-images = true
+	elem "label11"
+		type = LABEL
+		pos = 24,64
+		size = 344x24
+		anchor1 = 1,7
+		anchor2 = 35,10
+		font-size = 10
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #073582
+		border = line
+		saved-params = ""
+		text = "World Chat (OOC)"
+	elem "btnuni"
+		type = BUTTON
+		pos = 112,904
+		size = 109x36
+		anchor1 = 6,89
+		anchor2 = 12,93
+		font-family = "Verdana,Arial"
+		font-size = 10
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		border = line
+		saved-params = "is-checked"
+		text = "Universe"
+		command = ".winset \"input.command=\"!Universe \\\"\""
+		is-flat = true
+	elem "info"
+		type = INFO
+		pos = 1568,200
+		size = 317x667
+		anchor1 = 78,21
+		anchor2 = 99,90
+		font-family = "Arial,Verdana"
+		font-size = 10
+		text-color = #ffffff
+		background-color = #4375c8
+		is-default = true
+		saved-params = ""
+		highlight-color = #4375c8
+		tab-text-color = #ffffff
+		tab-background-color = #4375c8
+		tab-font-family = "Arial,Verdana"
+		tab-font-size = 10
+
+window "mappane"
+	elem "mappane"
+		type = MAIN
+		pos = 281,0
+		size = 776x792
+		anchor1 = none
+		anchor2 = none
+		background-color = #4375c8
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-resize = false
+		is-pane = true
+	elem "map"
+		type = MAP
+		pos = 0,-26
+		size = 776x818
+		anchor1 = 0,0
+		anchor2 = 100,100
+		is-default = true
+		drop-zone = false
+		saved-params = ""
+	elem "tooltipoutput"
+		type = OUTPUT
+		pos = 171,561
+		size = 456x82
+		anchor1 = 22,71
+		anchor2 = 81,81
+		text-color = #ffffff
+		background-color = #4375c8
+		is-visible = false
+		border = line
+		saved-params = "max-lines"
+	elem "tooltiplabel"
+		type = LABEL
+		pos = 171,531
+		size = 456x30
+		anchor1 = 22,68
+		anchor2 = 81,71
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #073582
+		is-visible = false
+		border = line
+		saved-params = ""
+		text = "Tool Tip"
+		allow-html = true
+	elem "tooltipicon"
+		type = LABEL
+		pos = 597,532
+		size = 30x29
+		anchor1 = 77,67
+		anchor2 = 81,71
+		is-visible = false
+		saved-params = ""
+		text = ""
+		image = 'Photoshop\\32.png'
+
+window "pane_browser"
+	elem "pane_browser"
+		type = MAIN
+		pos = 281,0
+		size = 392x480
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+	elem "browser2"
+		type = BROWSER
+		pos = 0,0
+		size = 392x480
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		saved-params = ""
+		show-history = true
+
+window "resources"
+	elem "resources"
+		type = MAIN
+		pos = -1450,91
+		size = 783x830
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		is-pane = true
+		image = 'Interface\\Empire.png'
+	elem "label23"
+		type = LABEL
+		pos = 386,276
+		size = 32x20
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "$"
+	elem "label21"
+		type = LABEL
+		pos = 32,72
+		size = 464x96
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #5880c4
+		border = line
+		saved-params = ""
+		text = "Resources are an important part of your new empire, to begin collecting resources buy some miners with naquada and watch as your resources grow over time.\n\nHELP: Not mining? - Hit the big \"Start Mining\" Button and you should see the progress bar slowly increase."
+		text-wrap = true
+	elem "button23"
+		type = BUTTON
+		pos = 536,72
+		size = 104x120
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #0099cc
+		saved-params = "is-checked"
+		text = "Start Mining"
+		command = "StartMining"
+	elem "button27"
+		type = BUTTON
+		pos = 128,8
+		size = 104x44
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = "is-checked"
+		text = "Resources"
+		command = "OpenResources"
+	elem "button28"
+		type = BUTTON
+		pos = 608,8
+		size = 104x44
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = "is-checked"
+		text = "Close (X)"
+		command = "CloseEmpire"
+	elem "OpenEmpire"
+		type = BUTTON
+		pos = 8,8
+		size = 104x44
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = "is-checked"
+		text = "Research"
+		command = "OpenEmpire"
+	elem "label22"
+		type = LABEL
+		pos = 288,188
+		size = 216x20
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold underline"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "Iron Miners"
+	elem "minercostiron"
+		type = LABEL
+		pos = 416,276
+		size = 88x20
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "5"
+	elem "label20"
+		type = LABEL
+		pos = 392,304
+		size = 80x20
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "Active Miners"
+		align = left
+	elem "minerslabeliron"
+		type = LABEL
+		pos = 464,304
+		size = 40x20
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "0"
+	elem "button26"
+		type = BUTTON
+		pos = 292,268
+		size = 92x56
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #073582
+		is-transparent = true
+		saved-params = "is-checked"
+		text = "Buy Miners"
+		command = "BuyMineriron"
+	elem "minerprogressiron"
+		type = BAR
+		pos = 288,212
+		size = 216x48
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		saved-params = ""
+		bar-color = #66ffff
+		is-slider = false
+		width = 100
+		dir = east
+	elem "label18"
+		type = LABEL
+		pos = 32,188
+		size = 128x20
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold underline"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "Naquada Miners"
+	elem "label17"
+		type = LABEL
+		pos = 136,276
+		size = 32x20
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "$"
+	elem "trinium"
+		type = LABEL
+		pos = 600,284
+		size = 60x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "0"
+	elem "naquadria"
+		type = LABEL
+		pos = 600,260
+		size = 60x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "0"
+	elem "bronze"
+		type = LABEL
+		pos = 600,212
+		size = 60x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "0"
+	elem "iron"
+		type = LABEL
+		pos = 600,236
+		size = 60x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "0"
+	elem "label14"
+		type = LABEL
+		pos = 540,284
+		size = 60x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "Trinium"
+	elem "4343432"
+		type = LABEL
+		pos = 540,260
+		size = 60x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "Naquadria"
+	elem "3232"
+		type = LABEL
+		pos = 540,212
+		size = 60x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "Naquada"
+	elem "ir32"
+		type = LABEL
+		pos = 540,236
+		size = 60x20
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "Iron"
+	elem "minercost"
+		type = LABEL
+		pos = 160,276
+		size = 88x20
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "1"
+	elem "label16"
+		type = LABEL
+		pos = 136,300
+		size = 80x20
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "Active Miners"
+		align = left
+	elem "minerslabel"
+		type = LABEL
+		pos = 208,304
+		size = 40x20
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "0"
+	elem "button25"
+		type = BUTTON
+		pos = 36,268
+		size = 92x56
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #073582
+		saved-params = "is-checked"
+		text = "Buy Miners"
+		command = "BuyMiner"
+	elem "minerprogress"
+		type = BAR
+		pos = 32,212
+		size = 216x48
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		saved-params = ""
+		bar-color = #66ffff
+		is-slider = false
+		width = 100
+		dir = east
+
+window "shop"
+	elem "shop"
+		type = MAIN
+		pos = 281,0
+		size = 620x470
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Shop"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		icon = 'Interface\\112565.png'
+		image = 'Interface\\SHOP.png'
+	elem "button8"
+		type = BUTTON
+		pos = 56,27
+		size = 82x21
+		anchor1 = none
+		anchor2 = none
+		saved-params = "is-checked"
+		text = ""
+		image = 'Interface\\Close.png'
+		command = "HideShoppp"
+		stretch = true
+	elem "shopweb"
+		type = BROWSER
+		pos = 48,136
+		size = 400x296
+		anchor1 = 9,34
+		anchor2 = 83,90
+		background-color = #4375c8
+		saved-params = ""
+	elem "label5"
+		type = LABEL
+		pos = 328,52
+		size = 132x36
+		anchor1 = none
+		anchor2 = none
+		font-size = 24
+		text-color = #f8f8f8
+		background-color = #4375c8
+		saved-params = ""
+		text = "SHOP"
+
+window "staffchat"
+	elem "staffchat"
+		type = MAIN
+		pos = 281,0
+		size = 640x336
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Staff Chat"
+	elem "staffinput"
+		type = INPUT
+		pos = 0,304
+		size = 640x32
+		anchor1 = 0,90
+		anchor2 = 100,100
+		text-color = #ffffff
+		background-color = #292929
+		saved-params = ""
+		command = "staffchat"
+	elem "staff_output"
+		type = OUTPUT
+		pos = 0,0
+		size = 640x304
+		anchor1 = 0,0
+		anchor2 = 100,90
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = "max-lines"
+
+window "website"
+	elem "website"
+		type = MAIN
+		pos = 281,0
+		size = 720x380
+		anchor1 = none
+		anchor2 = none
+		background-color = none
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		image = 'Interface\\WebInterface.png'
+		keep-aspect = true
+		outer-size = 734x394
+		inner-size = 720x380
+	elem "label10"
+		type = LABEL
+		pos = 156,16
+		size = 420x32
+		anchor1 = none
+		anchor2 = none
+		font-size = 20
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #8fb9ff
+		saved-params = ""
+		text = "Stargate: BYOND"
+	elem "button6"
+		type = BUTTON
+		pos = 475,59
+		size = 101x41
+		anchor1 = 54,18
+		anchor2 = 63,24
+		font-size = 15
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = none
+		saved-params = "is-checked"
+		text = "Online"
+		image = 'ScreenShots\\Button.png'
+		command = "sgfonline"
+	elem "button5"
+		type = BUTTON
+		pos = 603,15
+		size = 101x41
+		anchor1 = none
+		anchor2 = none
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = none
+		saved-params = "is-checked"
+		text = "(X) Close"
+		image = 'ScreenShots\\Button.png'
+		command = "CloseWebsite1"
+	elem "SGOweb"
+		type = BROWSER
+		pos = 40,120
+		size = 592x240
+		anchor1 = 6,34
+		anchor2 = 94,86
+		background-color = #2c3f5e
+		saved-params = ""
+	elem "button4"
+		type = BUTTON
+		pos = 367,59
+		size = 101x41
+		anchor1 = 54,18
+		anchor2 = 63,24
+		font-size = 15
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = none
+		saved-params = "is-checked"
+		text = "Gates"
+		image = 'ScreenShots\\Button.png'
+		command = "sgfgates"
+	elem "button3"
+		type = BUTTON
+		pos = 256,59
+		size = 101x41
+		anchor1 = 36,16
+		anchor2 = 50,26
+		font-size = 15
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = none
+		saved-params = "is-checked"
+		text = "Rules"
+		image = 'ScreenShots\\Button.png'
+		command = "sgfrules"
+	elem "button1"
+		type = BUTTON
+		pos = 149,59
+		size = 101x41
+		anchor1 = 21,16
+		anchor2 = 35,26
+		font-size = 15
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = none
+		saved-params = "is-checked"
+		text = "News"
+		image = 'ScreenShots\\Button.png'
+		command = "sgf"
+
+window "winbrowser"
+	elem "winbrowser"
+		type = MAIN
+		pos = 281,0
+		size = 640x480
+		anchor1 = none
+		anchor2 = none
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "browser"
+		type = BROWSER
+		pos = 0,0
+		size = 640x480
+		anchor1 = 0,0
+		anchor2 = 100,100
+		background-color = #000000
+		is-default = true
+		saved-params = ""
+		show-history = true
+		show-url = true
+
+window "winmedal"
+	elem "winmedal"
+		type = MAIN
+		pos = 281,0
+		size = 522x205
+		anchor1 = none
+		anchor2 = none
+		background-color = #727272
+		is-visible = false
+		border = line
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+	elem "MedalOutput"
+		type = LABEL
+		pos = 16,50
+		size = 320x153
+		anchor1 = 3,24
+		anchor2 = 64,99
+		font-family = "Arial"
+		font-size = 12
+		font-style = "bold"
+		text-color = #252525
+		background-color = #808080
+		border = sunken
+		saved-params = ""
+		text = ""
+	elem "label3"
+		type = LABEL
+		pos = 344,6
+		size = 169x194
+		anchor1 = 66,0
+		anchor2 = 98,95
+		border = line
+		saved-params = ""
+		text = ""
+		image = 'Interface\\medal.jpg'
+		image-mode = stretch
+	elem "label1"
+		type = LABEL
+		pos = 16,6
+		size = 320x47
+		anchor1 = 3,3
+		anchor2 = 64,26
+		font-family = "Arial"
+		font-size = 12
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #575757
+		border = sunken
+		saved-params = ""
+		text = ">>>Congratulations<<<\nYou have unlocked a medal!"
+
+window "winquest"
+	elem "winquest"
+		type = MAIN
+		pos = 281,0
+		size = 412x350
+		anchor1 = none
+		anchor2 = none
+		background-color = #4375c8
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		image = 'Interface\\Quest.png'
+	elem "questtitle"
+		type = OUTPUT
+		pos = 123,21
+		size = 264x48
+		anchor1 = 30,6
+		anchor2 = 94,20
+		font-size = 14
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = "max-lines"
+	elem "button7"
+		type = BUTTON
+		pos = 23,33
+		size = 82x21
+		anchor1 = 6,9
+		anchor2 = 25,15
+		text-color = #ffffff
+		background-color = #606060
+		saved-params = "is-checked"
+		text = ""
+		image = 'Interface\\Close.png'
+		command = "Closequest999hhh8y4384323897434836874328736247326432076"
+		is-flat = true
+	elem "outputquest"
+		type = OUTPUT
+		pos = 25,85
+		size = 319x240
+		anchor1 = 6,24
+		anchor2 = 93,93
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = "max-lines"
+
+window "wintut"
+	elem "wintut"
+		type = MAIN
+		pos = 281,0
+		size = 372x248
+		anchor1 = none
+		anchor2 = none
+		background-color = #414141
+		is-visible = false
+		border = line
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		image = 'Interface\\Tutorial.png'
+	elem "label4"
+		type = LABEL
+		pos = 16,32
+		size = 336x34
+		anchor1 = 4,13
+		anchor2 = 95,27
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #4375c8
+		saved-params = ""
+		text = "Information"
+	elem "outputtut"
+		type = OUTPUT
+		pos = 24,78
+		size = 272x144
+		anchor1 = 6,31
+		anchor2 = 82,90
+		text-color = #fffdfd
+		background-color = #4375c8
+		saved-params = "max-lines"
+		link-color = #b94646
+		visited-color = #d72828
+	elem "button2"
+		type = BUTTON
+		pos = 14,8
+		size = 82x21
+		anchor1 = 4,3
+		anchor2 = 26,12
+		font-family = "Arial"
+		font-style = "bold"
+		text-color = #ffffff
+		background-color = #414141
+		saved-params = "is-checked"
+		text = ""
+		image = 'Interface\\Close.png'
+		command = "CloseWindowNowe438759872987979837938475"
+		is-flat = true
+
+window "wormhole"
+	elem "wormhole"
+		type = MAIN
+		pos = 281,0
+		size = 776x792
+		anchor1 = none
+		anchor2 = none
+		saved-params = "pos;size;is-minimized;is-maximized"
+		is-pane = true
+	elem "label6"
+		type = LABEL
+		pos = 0,-4
+		size = 776x804
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		text = ""
+
+window "hidden"
+	elem "hidden"
+		type = MAIN
+		pos = 281,0
+		size = 16x24
+		anchor1 = none
+		anchor2 = none
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "browser"
+		type = BROWSER
+		pos = 0,0
+		size = 16x24
+		anchor1 = none
+		anchor2 = none
+		saved-params = ""
+		auto-format = true
+
